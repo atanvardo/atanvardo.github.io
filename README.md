@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Main page
 
 Test
