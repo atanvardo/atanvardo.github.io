@@ -6,7 +6,7 @@ This is a tutorial for phylogenetic analysis based on the notes that I took duri
 
 ## Theory
 
-- [Lesson 1: Basic concepts](/Basic%20concepts.md)
+- [Lesson 1: Basic concepts](/Basic concepts.md)
 - [Lesson 2: Data files](/Data%20files.md)
 - [Lesson 3: Gaps and missing data](/Gaps.md)
 - [Lesson 4: Nucleotide substitution models](/Nucleotide%20substitution%20models.md)
@@ -16,7 +16,7 @@ This is a tutorial for phylogenetic analysis based on the notes that I took duri
 - [Lesson 8: Cladistic methods. Maximum Parsimony](/Parsimony.md)
 - [Lesson 9: Maximum Likelihood](/Maximum%20Likelihood.md)
 - [Lesson 10: Bayesian Inference](/Bayesian%20inference.md)
-- [Lesson 11: Dating](/11-Dating.md)
+- [Lesson 11: Dating](/Dating.md)
 
 [Tricks and cheats](/Tricks%20and%20cheats.md)
 
