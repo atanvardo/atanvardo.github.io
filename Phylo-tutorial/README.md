@@ -6,7 +6,7 @@ This is a tutorial for phylogenetic analysis based on the notes that I took duri
 
 ## Theory
 
-- [Lesson 1: Basic concepts](/Basic concepts.md)
+- [Lesson 1: Basic concepts](/Basic_concepts.md)
 - [Lesson 2: Data files](/Data%20files.md)
 - [Lesson 3: Gaps and missing data](/Gaps.md)
 - [Lesson 4: Nucleotide substitution models](/Nucleotide%20substitution%20models.md)
