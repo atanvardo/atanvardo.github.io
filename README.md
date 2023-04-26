@@ -1,4 +1,8 @@
-# atanvardo.github.io
+---
+layout: default
+---
+
+# Main page
 
 Test
 
