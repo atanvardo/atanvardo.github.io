@@ -4,4 +4,4 @@ Test
 
 Test2
 
-[Phylogenetic tutorial](/Phylo-Tutorial/README.md)
+[Phylogenetic tutorial](/Phylo-tutorial/README.md)
