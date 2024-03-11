@@ -23,3 +23,4 @@ In order to active this option, we must open any folder, and then go to the menu
 
 Just be careful when renaming files, to avoid changing accidentally the extension! (Windows will warn you if this happens).
 
+It's very important, when loading files in any phylogeny program, to correctly write both the name of the file and the extension. For example, if you have a Nexus file named `MyData.nex` and you didn't tell Windows to show the file extensions, it may look as `MyData` in your folder. If you try to open it in MrBayes using the command `execute MyData`, MrBayes will not know which file you are referring to. You have to use the full name: `execute MyData.nex`
