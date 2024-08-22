@@ -189,3 +189,13 @@ At the end we will have a file that contains our tree in NEXUS format, and can b
 5. Adjust the mu and sigma parameters until the graph represent a reasonable distribution of possible ages.
 
 [^1]: Actually 10001, counting the starting tree, but that doesn't matter.
+
+## Calculate speciation and extinction rates
+
+For this, we have to use the Birth-Death model.
+
+After the analysis, we can check in Tracer the values of two parameters, called `birthDeath.meanGrowthRate` (r) and `birthDeath.relativeDeathRate` (e).
+
+The speciation rate (lambda) is r / (1 - e).
+
+The extinction rate (mu) is lambda x e.
