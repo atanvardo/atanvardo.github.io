@@ -20,6 +20,8 @@ This is a tutorial for phylogenetic analysis based on the notes that I took duri
 
 [Tricks and cheats](/Tricks.md)
 
+[Preparing your sequences](/Preparing.md)
+
 ## Practical tutorials
 
 These tutorials include simple examples of several phylogenetic methods. For more complex analyses, read the manuals of the software used in each tutorial.
