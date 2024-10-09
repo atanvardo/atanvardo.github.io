@@ -64,6 +64,8 @@ Sequence names should not have any characters besides:
 
 Be specialle aware of dots (`.`), as they can be dangerous. Some phylogenetic programs interpret them as a `same nucleotide as above` character and this can lead to errors or (worse) reading your matrix incorrectly.
 
+If you created your alignments with Geneious, be careful, because if it needs to reverse a sequence to align it with the others, it will add a `_(reversed)` tag at the end of the sequence names, but it won't show it. It's better to export the alignment as a Fasta o Nexus file, open it with Notepad++ or a similar program, and remove this unnecessary addition (also remember to remove the apostrophes `'` at the beginning and end of the names. Then import the file again to Geneious.
+
 ## Create the concatenated alignment
 
 In Geneious, it is very easy. Just select the alignments that you want to concatenate, and on the top menu click on `Tools` > `Concatenate sequences or alignments...`.
