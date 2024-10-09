@@ -107,8 +107,8 @@ For programs like IQTREE or MrBayes you want to separate the different positions
 ```
 18S		1 - 851
 28S		852 - 1509
-COIpos1	1510 - 2224\3
-COIpos2	1511 - 2224\3
-COIpos3	1512 - 2224\3
+COIpos1		1510 - 2224\3
+COIpos2		1511 - 2224\3
+COIpos3		1512 - 2224\3
 ITS		2225 - 2655
 ```
