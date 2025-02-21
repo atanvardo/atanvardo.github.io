@@ -2,7 +2,7 @@
 
 This is a tutorial for the pipeline that we follow for NGS data in our lab. 
 
-## Our method
+## Wet lab
 
 ### Basics
 
@@ -43,8 +43,7 @@ The `N` at the beginning of each primer sequence is a random nucleotide that was
 
 These 24 tags are enough to amplify 576 samples (6 plates). But, during the design of the experiment, we decided that each batch would be composed only by 384 samples (4 plates), by using a combination of 16 forward primers and 24 reverse primers. In each row we will add one of the variants of the F primer, and in each column a variant of the R primers:
 
-| **Plate 1** |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | R10 | R11 | R12 |
+| **Plate 1** | R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | R10 | R11 | R12 |
 | F1 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F2 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F3 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -56,8 +55,7 @@ These 24 tags are enough to amplify 576 samples (6 plates). But, during the desi
 
 <br>
 
-| **Plate 2** |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | R13 | R14 | R15 | R16 | R17 | R18 | R19 | R20 | R21 | R22 | R23 | R24 |
+| **Plate 2** | R13 | R14 | R15 | R16 | R17 | R18 | R19 | R20 | R21 | R22 | R23 | R24 |
 | F1 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F2 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F3 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -69,8 +67,7 @@ These 24 tags are enough to amplify 576 samples (6 plates). But, during the desi
 
 <br>
 
-| **Plate 3** |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | R10 | R11 | R12 |
+| **Plate 3** | R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | R10 | R11 | R12 |
 | F9 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F10 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F11 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -82,8 +79,7 @@ These 24 tags are enough to amplify 576 samples (6 plates). But, during the desi
 
 <br>
 
-| **Plate 4** |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | R13 | R14 | R15 | R16 | R17 | R18 | R19 | R20 | R21 | R22 | R23 | R24 |
+| **Plate 4** | R13 | R14 | R15 | R16 | R17 | R18 | R19 | R20 | R21 | R22 | R23 | R24 |
 | F9 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F10 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F11 |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -114,4 +110,22 @@ The PCR program is:
 	- 50ºC for 1:30
 	- 72ºC for 1:30
 - 72ºC for 10:00
+
+### Equimolar pooling
+
+After running the PCR, we need to mix all the PCR products in a single pool, but including the same amount of DNA from each of them. In order to do this, we need to know the DNA concentration in each PCR product. We take the measurements using a Qubit, and then calculate how much volume of each PCR product we need to take to get 100ng of DNA (just divide 100 by your concentration in ng/uL).
+
+### Sequencing
+
+When all the PCR products of our plates have been mixed in a single pool, it's ready to be sent to the sequencing service for its transformation into an Illumina library and sequencing.
+
+Currently, we are using one Illumina MiSeq v2 kit that produces 20 million sequences (in the UJ, we have to buy the kit ourselves and send it with the pools to Wiesiek's lab). One kit is enough to sequence 8 libraries (8 pools of 4 plates, or 2944 samples). If the number of samples is smaller, we can use the smaller kit that gets 1 million sequences.
+
+Some sequencing services require that we run our pools in an agarose gel and isolate the band that correspond to our target marker, as there are usually other bands corresponding to inspecific amplification that may "stain" our libraries.
+
+The sequencing service can ask if we want to include something called PhiX control. The answer is usually yes. It is a bunch of random sequences from the PhiX phage that are included to give more heterogeneity to the DNA in the flow cell. If our sequences are similar, as in our case (because they are all the same marker), it is possible that most of them have the same nucleotide in a particular position. In the absence of the PhiX control, this will create a huge monochromatic flash in each sequencing step that will hide different nucleotides in a minority of sequences. For example, imagine that most of the sequences have a T in the position that is being read, and some have a C. The flash of the T color will be so bright that the sequencer will not be able to see the flash of the C nucleotides, and will incorrectly assign a T to all the sequences. The PhiX control, being basically random nucleotides, adds color diversity and solves this problem. Then, the Illumina sequencer automatically removes the PhiX sequences from the result.
+
+Each sequence is read from the two extremes, creating two reads (R1 and R2) that will be combined during the bioinformatic process.
+
+## Bioinformatics
 
