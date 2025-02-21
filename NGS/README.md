@@ -22,7 +22,7 @@ The primers (for the COI) are the following:
 | COIBF3_x | Forward | `NxxxxxxCCHGAYATRGCHTTYCCHCG` |
 | COIBR2_x | Reverse | `NxxxxxxTCDGGRTGNCCRAARAAYCA` |
 
-We have a total of 24 tags:
+For the Sonata project we use a total of 24 tags:
 
 | 1 | AACCGA | 9 | GAACTA | 17 | CTAGGC |
 | 2 | CCGGAA | 10 | CACAGT | 18 | TGAGGT |
@@ -39,6 +39,8 @@ These tags have been selected to have a Hamming distance (nucleotide differences
 
 The `N` at the beginning of each primer sequence is a random nucleotide that was included following the recommendations by Wiesiek Babik.
 
+### Plate design for the Sonata project
+
 These 24 tags are enough to amplify 576 samples (6 plates). But, during the design of the experiment, we decided that each batch would be composed only by 384 samples (4 plates), by using a combination of 16 forward primers and 24 reverse primers. In each row we will add one of the variants of the F primer, and in each column a variant of the R primers:
 
 | **Plate 1** |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -52,7 +54,7 @@ These 24 tags are enough to amplify 576 samples (6 plates). But, during the desi
 | F7 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F8 |  |  |  |  |  |  |  |  |  |  |  |  |
 
- 
+<br>
 
 | **Plate 2** |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | R13 | R14 | R15 | R16 | R17 | R18 | R19 | R20 | R21 | R22 | R23 | R24 |
@@ -65,7 +67,7 @@ These 24 tags are enough to amplify 576 samples (6 plates). But, during the desi
 | F7 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F8 |  |  |  |  |  |  |  |  |  |  |  |  |
 
- 
+<br>
 
 | **Plate 3** |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | R10 | R11 | R12 |
@@ -78,7 +80,7 @@ These 24 tags are enough to amplify 576 samples (6 plates). But, during the desi
 | F15 |  |  |  |  |  |  |  |  |  |  |  |  |
 | F16 |  |  |  |  |  |  |  |  |  |  |  |  |
 
- 
+<br>
 
 | **Plate 4** |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | R13 | R14 | R15 | R16 | R17 | R18 | R19 | R20 | R21 | R22 | R23 | R24 |
@@ -106,4 +108,10 @@ In each well, we will add:
 
 The PCR program is:
 
-- 
+- 95ºC for 15:00
+- 35 steps of
+	- 94ºC for 0:30
+	- 50ºC for 1:30
+	- 72ºC for 1:30
+- 72ºC for 10:00
+
