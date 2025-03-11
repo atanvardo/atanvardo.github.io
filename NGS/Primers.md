@@ -11,14 +11,14 @@ For example, the primers that we are using to amplify the COI for the Sonata pro
 
 And we are using a total of 24 tags:
 
-| 1 | AACCGA | 9 | GAACTA | 17 | CTAGGC |
-| 2 | CCGGAA | 10 | CACAGT | 18 | TGAGGT |
-| 3 | AGTGTT | 11 | CAATCG | 19 | TCAACT |
-| 4 | CCGCTG | 12 | CCGTCC | 20 | TACACA |
-| 5 | AACGCG | 13 | GGGACA | 21 | GATGAC |
-| 6 | GGCTAC | 14 | AGCTCA | 22 | AGTAGA |
-| 7 | TTCTCG | 15 | ACTGGG | 23 | TCCTTT |
-| 8 | TCACTC | 16 | GATCGG | 24 | ATGAGG |
+| 1 | `AACCGA` | 9 | `GAACTA` | 17 | `CTAGGC` |
+| 2 | `CCGGAA` | 10 | `CACAGT` | 18 | `TGAGGT` |
+| 3 | `AGTGTT` | 11 | `CAATCG` | 19 | `TCAACT` |
+| 4 | `CCGCTG` | 12 | `CCGTCC` | 20 | `TACACA` |
+| 5 | `AACGCG` | 13 | `GGGACA` | 21 | `GATGAC` |
+| 6 | `GGCTAC` | 14 | `AGCTCA` | 22 | `AGTAGA` |
+| 7 | `TTCTCG` | 15 | `ACTGGG` | 23 | `TCCTTT` |
+| 8 | `TCACTC` | 16 | `GATCGG` | 24 | `ATGAGG` |
 
 These tags have been selected to have a Hamming distance (nucleotide differences) greater than 3, to avoid that one tag changes to another by a PCR or sequencing error.
 

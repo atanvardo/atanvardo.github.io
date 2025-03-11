@@ -13,9 +13,9 @@ Illumina is a high-throughput sequencing by synthesis. What does this mean?
 
 Yes, we are going to sequence **all our samples** (specifically, their COI fragments) in a single batch.
 
-[Primers and tags](/Primers.md).
+Here it is explained how our primers with tags work and their structure: [Primers and tags](/Primers.md).
 
-[Plate design for the Sonata project](/Plates.md).
+Here we give an example of how to design our plates and organize the primer combinations: [Plate design for the Sonata project](/Plates.md).
 
 ### PCR
 
