@@ -55,8 +55,37 @@ When all the PCR products of our plates have been mixed in a single pool, it's r
 
 ### Pre-requirements
 
+All the commands and scripts are run in a Linux environment. You should be familiar with how to work in Linux and move through folders and executing commands.
+
 - If you are using a Windows computer, install the Windows subsystem for Linux ([Instructions](/WSL.md)).
 
 - Install the [pre-required packages](/Prerequirements.md).
 
+### Folder structure
 
+This guide will use the folder structure that I used when writing the scripts for the first run of our analyses for the Sonata project:
+
+- Project directory
+	- `coidb`
+	- `sequences`
+		- `01-demultiplexed`
+		- `02-quality_control`
+		- `03-unmerged`
+		- `04-merged`
+		- `05-qc_filter`
+		- `06-fasta`
+		- `07-blast`
+		- `08-definitive`
+		- `09-trimmed`
+
+The folder named `coidb` contains our reference database. In order to create the database, we will go to GenBank and download all the sequences corresponding to our target taxonomic group and marker, in a single fasta file. Then, in that folder, we will run this command:
+
+```
+makeblastdb –in [name_of_our_fasta_file] –dbtype nucl
+```
+
+You can change the names of files and folders, but remember to always check the scripts and modify them accordingly!
+
+### Step by step
+
+Step 1: [demultiplexing](/Demultiplexing.md).
