@@ -23,23 +23,7 @@ Here we give an example of how to design our plates and organize the primer comb
 
 ### PCR
 
-For the PCR we take our plate, and in each well, we add:
-
-- 2 uL of the **DNA extraction**.
-- 2.25 uL of each **primer** (4.5 uL in total).
-- 7.5 uL of the Qiagen polymerase **master mix**.
-- 1 uL of **water**.
-
-(I usually combine the master mix and the water for all the samples in a single tube, and then dispense 8.5 uL of that mix in each well).
-
-The PCR program is:
-
-- 95ºC for 15:00
-- 35 steps of
-	- 94ºC for 0:30
-	- 50ºC for 1:30
-	- 72ºC for 1:30
-- 72ºC for 10:00
+Check the [lab protocol page](/Labprotocol.md).
 
 ### Equimolar pooling
 
