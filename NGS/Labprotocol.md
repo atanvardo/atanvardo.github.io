@@ -87,7 +87,7 @@ Briefly vortex both tubes.
 
 Get your PCR plate ready. Centrifuge it (quick spin, 30-60 seconds at max speed).
 
-Add 1 uL of the PCR product to the corresponding Qubit tubes. After pouring the PCR product, immediately close the Qubit tube and give it a brief spin.
+Add 1 uL of the PCR product to the corresponding Qubit tubes. After pouring the PCR product, immediately close the Qubit tube and vortex it briefly.
 
 Wait 5 minutes, you can clean the lab and store the reagents meanwhile.
 
